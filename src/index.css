@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300..900;1,300..900&family=Quicksand:wght@300;400;500;600;700&family=Comic+Neue:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Nunito", "Quicksand", "Comic Neue", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer utilities {
+  /* Premium transparent scrollbars */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.25);
+    border-radius: 9999px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(148, 163, 184, 0.45);
+  }
+
+  /* Dyslexia friendly font spacing and style */
+  .font-dyslexic {
+    font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif !important;
+    word-spacing: 0.18em !important;
+    letter-spacing: 0.05em !important;
+    line-height: 2.0 !important;
+  }
+
+  /* Custom Spacing & Handicap Assistance */
+  .line-spacing-wide p, .line-spacing-wide span, .line-spacing-wide h1, .line-spacing-wide h2, .line-spacing-wide h3, .line-spacing-wide h4, .line-spacing-wide li {
+    line-height: 2.2 !important;
+  }
+  .line-spacing-extra p, .line-spacing-extra span, .line-spacing-extra h1, .line-spacing-extra h2, .line-spacing-extra h3, .line-spacing-extra h4, .line-spacing-extra li {
+    line-height: 2.8 !important;
+  }
+
+  .word-spacing-wide p, .word-spacing-wide span, .word-spacing-wide h1, .word-spacing-wide h2, .word-spacing-wide h3, .word-spacing-wide h4, .word-spacing-wide li {
+    word-spacing: 0.15em !important;
+  }
+  .word-spacing-extra p, .word-spacing-extra span, .word-spacing-extra h1, .word-spacing-extra h2, .word-spacing-extra h3, .word-spacing-extra h4, .word-spacing-extra li {
+    word-spacing: 0.28em !important;
+  }
+
+  .highlight-active a, .highlight-active button {
+    outline: 3.5px solid #E11D48 !important;
+    outline-offset: 3px !important;
+    box-shadow: 0 0 10px rgba(225, 29, 72, 0.5) !important;
+  }
+}
+
+/* Base style resets and custom animations */
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+

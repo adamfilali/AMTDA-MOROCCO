@@ -1,0 +1,6 @@
+{
+  "name": "AMTDA Morocco",
+  "description": "Plateforme numérique multi-écrans de l'Association Marocaine des Troubles et Difficultés d'Apprentissage (AMTDA). Outils de dépistage, d'évaluation, bibliothèque audio, et jeux sérieux pour la dyslexie.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
