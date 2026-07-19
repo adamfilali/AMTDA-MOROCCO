@@ -147,7 +147,7 @@ export default function KidsMusicSection({ currentLang, songs, onSongPlay }: Kid
       setCurrentPlayingId(song.id);
 
       // Check if URL is valid MP3 or fallback to local synth melody
-      if (song.audioUrl && song.audioUrl.startsWith("http")) {
+      if (song.url && (song.url.startsWith("http") || song.url.startsWith("/"))) {
         const audio = new Audio(song.audioUrl);
         audioRef.current = audio;
         
