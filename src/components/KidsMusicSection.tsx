@@ -146,8 +146,8 @@ export default function KidsMusicSection({ currentLang, songs, onSongPlay }: Kid
       stopAllAudio();
       setCurrentPlayingId(song.id);
 
-      // Check if URL is valid MP3 or fallback to local synth melody
-      if (song.url && (song.url.startsWith("http") || song.url.startsWith("/"))) {
+      // Check if URL is valid MP3 or local file
+      if (song.url) {
         const audio = new Audio(song.url);
         audioRef.current = audio;
         
@@ -170,11 +170,10 @@ export default function KidsMusicSection({ currentLang, songs, onSongPlay }: Kid
             if (onSongPlay) onSongPlay(song);
           })
           .catch((err) => {
-            console.log("Audio URL failed, playing local synth melody instead.", err);
+            console.log("Audio play failed, playing fallback.", err);
             playSynthMelody(song.id);
           });
       } else {
-        // Base64 or empty audioUrl, play synth melody
         playSynthMelody(song.id);
       }
     }
