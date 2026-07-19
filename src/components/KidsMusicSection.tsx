@@ -198,8 +198,8 @@ export default function KidsMusicSection({ currentLang, songs, onSongPlay }: Kid
 
     // Trigger standard browser download
     const link = document.createElement("a");
-    link.href = song.audioUrl || "#";
-    link.download = `${song.title.FR.toLowerCase().replace(/\s+/g, "_")}.mp3`;
+    link.href = song.url || "#";
+    link.download = `${song.title.FR?.toLowerCase().replace(/\s+/g, "_") || "chanson"}.mp3`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -212,6 +212,7 @@ export default function KidsMusicSection({ currentLang, songs, onSongPlay }: Kid
       localStorage.setItem("amtda_stats", JSON.stringify(parsed));
     }
   };
+
 
   const handleShare = (song: SongItem) => {
     audioEffects.playPop();
