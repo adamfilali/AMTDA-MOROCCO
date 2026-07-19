@@ -434,7 +434,8 @@ export default function LibrarySection({
               </div>
 
               {/* Book Content Screen */}
-              <div className="lg:col-span-8 bg-slate-50 rounded-3xl p-5 border border-slate-200/80 min-h-[280px] flex flex-col justify-between shadow-2xs">
+             <div className="lg:col-span-8 rounded-3xl p-5 border border-slate-200/80 min-h-[280px] flex flex-col justify-between shadow-2xs bg-cover bg-center bg-no-repeat relative" style={{ backgroundImage: "url('./fil-couv.jpg')" }}>
+
                 {/* Book header bar */}
                 <div className="flex justify-between items-center pb-3 border-b border-slate-200">
                   <div className="flex items-center gap-2">
