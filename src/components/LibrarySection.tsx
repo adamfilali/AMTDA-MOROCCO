@@ -388,15 +388,11 @@ export default function LibrarySection({
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start animate-fade-in">
               {/* Cover view */}
               <div className="lg:col-span-4 space-y-4">
-                 <div 
-                  className="aspect-[3/4] w-full rounded-2xl shadow-sm p-5 flex flex-col justify-between text-white relative overflow-hidden bg-cover bg-center"
-                  style={{
-                backgroundColor: selectedBook.coverColor || '#0B722C',
-                backgroundImage: `url('${selectedBook.coverImage || './fil-couv.jpg'}')`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center'
-              }}
-
+                 <div className="aspect-[3/4] w-full rounded-2xl shadow-sm p-5 flex flex-col justify-between text-white relative overflow-hidden bg-[length:100%_100%] bg-center bg-no-repeat"
+            style={{
+              backgroundColor: selectedBook.coverColor || '#0B722C',
+              backgroundImage: `url('${selectedBook.coverImage || './fil-couv.jpg'}')`
+            }}
                 >
                   <div className="space-y-1.5 relative z-10">
                     <span className="bg-white/20 backdrop-blur-xs text-[9px] uppercase font-semibold px-2 py-0.5 rounded-full tracking-wider">
