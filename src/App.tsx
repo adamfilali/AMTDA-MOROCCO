@@ -136,6 +136,8 @@ const translations = {
 };
 
 export default function App() {
+ const [logoUrl, setLogoUrl] = useState<string>('./logo.svg');
+
   const [lang, setLang] = useState<Language>('fr');
   const [activeTab, setActiveTab] = useState<'home' | 'games' | 'evaluation' | 'library' | 'gallery' | 'admin' | 'classe'>('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
