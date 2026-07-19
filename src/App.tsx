@@ -825,46 +825,12 @@ useEffect(() => {
               className="flex items-center gap-3 cursor-pointer select-none"
               id="logo-amtda-original"
             >
-              {logoUrl ? (
-                <img src={logoUrl} alt="AMTDA Logo Custom" className="h-20 md:h-24 object-contain animate-fade-in" referrerPolicy="no-referrer" />
-              ) : (
-                <div className="flex items-center">
-                  <svg viewBox="0 0 420 120" className="h-18 sm:h-22 md:h-24 w-auto" id="amtda-logo-svg">
-                    {/* Mascot Group */}
-                    <g transform="translate(10, 10)">
-                      {/* Five head rays (#92C83E) */}
-                      <line x1="50" y1="50" x2="15" y2="35" stroke="#92C83E" strokeWidth="6" strokeLinecap="round" />
-                      <line x1="50" y1="50" x2="30" y2="15" stroke="#92C83E" strokeWidth="6" strokeLinecap="round" />
-                      <line x1="50" y1="50" x2="50" y2="8" stroke="#92C83E" strokeWidth="6" strokeLinecap="round" />
-                      <line x1="50" y1="50" x2="70" y2="15" stroke="#92C83E" strokeWidth="6" strokeLinecap="round" />
-                      <line x1="50" y1="50" x2="85" y2="35" stroke="#92C83E" strokeWidth="6" strokeLinecap="round" />
-                      
-                      {/* Dark green head circle (#0B722C) */}
-                      <circle cx="50" cy="50" r="13" fill="#0B722C" />
-                      
-                      {/* Light green happy kid body (#92C83E) */}
-                      <path d="M 50,60 C 40,65 20,68 15,62 C 10,56 12,50 25,50 C 35,50 45,55 50,60 Z" fill="#92C83E" />
-                      <path d="M 50,60 C 60,65 72,55 80,45 C 85,39 88,42 85,48 C 80,58 68,68 50,75 Z" fill="#92C83E" />
-                      <path d="M 50,70 L 35,100 C 32,105 40,108 42,102 L 50,85 L 58,102 C 60,108 68,105 65,100 L 50,70 Z" fill="#92C83E" />
-                    </g>
-
-                    {/* Typography Group */}
-                    <g transform="translate(115, 18)">
-                      {/* AMTDA Large Orange Text (#F58220) */}
-                      <text x="0" y="45" fill="#F58220" fontSize="48" fontWeight="900" fontFamily='"Nunito", "Quicksand", sans-serif' letterSpacing="1.5">AMTDA</text>
-                      {/* Arabic subtitle in logo */}
-                      <text x="210" y="40" fill="#0B722C" fontSize="22" fontWeight="800" fontFamily='"Nunito", "Quicksand", sans-serif'>أمطدا</text>
-                      
-                      {/* Thick horizontal green bar (#0B722C) */}
-                      <rect x="0" y="55" width="285" height="5" fill="#0B722C" rx="2.5" />
-                      
-                      {/* Association Marocaine des Troubles et Difficultés d'Apprentissage (#133C8B) */}
-                      <text x="0" y="75" fill="#133C8B" fontSize="12.5" fontWeight="800" fontFamily='"Nunito", "Quicksand", sans-serif'>Association Marocaine</text>
-                      <text x="0" y="92" fill="#133C8B" fontSize="10.8" fontWeight="700" fontFamily='"Nunito", "Quicksand", sans-serif'>des Troubles et Difficultés d'Apprentissage</text>
-                    </g>
-                  </svg>
-                </div>
-              )}
+              {/* APPEL DIRECT DE VOTRE NOUVEAU LOGO SVG */}
+              <img 
+                src="/logo.svg" 
+                alt="Logo AMTDA" 
+                className="h-14 md:h-16 w-auto object-contain" 
+              />
             </motion.div>
 
             {/* Desktop Navigation */}
