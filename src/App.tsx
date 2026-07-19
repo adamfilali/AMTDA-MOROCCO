@@ -201,14 +201,6 @@ export default function App() {
     blueLightFilter: false,
   });
 
-  // LOGO DYNAMIC STATE
-  const [logoUrl, setLogoUrl] = useState<string>(() => {
-    return localStorage.getItem('./image/logo.svg') || '';
-  });
-
-  useEffect(() => {
-    localStorage.setItem('./image/logo.svg', logoUrl);
-  }, [logoUrl]);
 
   // STATISTICS ENGINE
   const [stats, setStats] = useState<ClickStats>(() => {
