@@ -497,7 +497,7 @@ useEffect(() => {
         id: 'song1',
         title: 'أناشيد مدرستي الحبيبة',
         artist: 'Chœur des Enfants AMTDA',
-        url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+        url: './choeur.mp3', // 🟢 قمنا بتغيير الرابط إلى ملفك المحلي الجديد
         lyrics: 'مدرستي يا نور عيني.. فيك أقضي جل يومي..\nأتعلم الحروف والعلوم.. وأحقق كل حلم..\nمدرستي يا بيتي الثاني.. فيك أحلى الألحان..'
       },
       {
@@ -511,7 +511,7 @@ useEffect(() => {
         id: 'song3',
         title: 'أغنية الحروف الهجائية',
         artist: 'Les Petits Écoliers de Tanger',
-        url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3',
+        url: './alphabet.mp3', // 🟢 قمنا بتغيير الرابط إلى ملفك المحلي الجديد
         lyrics: 'ألف أرنب يجري يلعب.. باء بطة تنط في الماء..\nتاء تاج فوق الرأس.. ثاء ثعلب صاد دجاجة..\nجيم جمل في الصحراء.. حاء حمامة تطير في السماء..'
       },
       {
