@@ -73,7 +73,7 @@ export default function Home({ setPage }: HomeProps) {
                 {/* Main Child Image */}
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-white border border-slate-100 transform hover:scale-[1.01] transition-transform duration-300">
                   <img
-                    src="assets/accu.jpg"
+                    src="./assets/accu.jpg"
                     alt="Enfant stressé ayant des difficultés d'apprentissage scolaire"
                     referrerPolicy="no-referrer"
                     className="w-full h-80 object-cover"
@@ -344,7 +344,7 @@ export default function Home({ setPage }: HomeProps) {
             <div className="lg:col-span-5 relative">
               <div className="rounded-3xl overflow-hidden shadow-xl border border-slate-200">
                 <img
-                  src="assets/qui.jpg"
+                  src="./assets/qui.jpg"
                   alt="Élèves souriants montrant les pouces vers le haut"
                   referrerPolicy="no-referrer"
                   className="w-full h-80 object-cover"

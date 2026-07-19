@@ -249,31 +249,31 @@ const [galleryItems, setGalleryItems] = useState<GalleryItem[]>(() => {
   return [
     {
       id: '1',
-      url: 'image/ortof.jpg',
+      url: './image/ortof.jpg',
       title: 'Journée Dépistage - Casablanca',
       description: 'Le dépistage précoce est souvent gratuit dans notre réseau des centres.'
     },
     {
       id: '2',
-      url: 'image/Fpro.jpg',
+      url: './image/Fpro.jpg',
       title: 'Formations au Professionnels',
       description: 'L\'accompagnement et la formation professionnelle permettent le développement stratégique des compétences en entreprise.'
     },
     {
       id: '3', // Corrigé : id unique
-      url: 'image/family.jpg',
+      url: '/image/family.jpg',
       title: 'AMTDA',
       description: 'La famille AMTDA'
     },
     {
       id: '4', // Corrigé : id unique
-      url: 'image/natio.jpg',
+      url: './image/natio.jpg',
       title: 'Journée d\'accompagnement',
       description: 'la mise en place d\'un PAP (Plan d\'Accompagnement Personnalisé) ou d\'un PPS.'
     },
     {
       id: '5', // Corrigé : id unique
-      url: 'image/scool.jpg',
+      url: './image/scool.jpg',
       title: 'Atelier d\'orthophonie - Casablanca',
       description: 'Atelier d\'orthophonie - Casablanca'
     }
@@ -339,7 +339,7 @@ useEffect(() => {
           en: 'AMTDA equipped primary pilot classrooms in Casablanca with ergonomic, dys-adaptive aids to support inclusive learning.',
           zh: '在国家战略合作框架下，协会在哈桑区装备了多所配备人体工程学与读写障碍友好教具的示范融合教室。'
         },
-        image: '/image/acc.jpg',
+        image: './image/acc.jpg',
         date: '15/07/2026',
         category: 'Actualités'
       }
@@ -543,7 +543,7 @@ useEffect(() => {
 
   // HOMEPAGE IMAGE STATE
   const [homePageImage, setHomePageImage] = useState<string>(() => {
-    return localStorage.getItem('amtda_homepage_image') || '/image/acc.jpg';
+    return localStorage.getItem('amtda_homepage_image') || './image/acc.jpg';
   });
 
   useEffect(() => {
@@ -560,7 +560,7 @@ useEffect(() => {
         type: 'video',
         title: 'Le petit chameau de Ouarzazate 🐪',
         description: "Un magnifique court-métrage d'animation rythmé qui stimule la prononciation vocale des syllabes chez l'enfant dyslexique.",
-        image: '/image/001.jpg',
+        image: './image/chameau.jpg',
         actionPayload: "Lancement du dessin animé éducatif !\nEn raison des restrictions d'iframe, la vidéo fictive se lance en mode stimulation sensorielle sonore."
       },
       {
@@ -568,7 +568,7 @@ useEffect(() => {
         type: 'video',
         title: 'Les aventures de Mimoun le singe 🐒',
         description: "Suivez Mimoun dans le Moyen-Atlas marocain pour apprendre les formes géométriques et l'importance de la solidarité.",
-        image: '/image/0012.jpg',
+        image: '/image/singee.jpg',
         actionPayload: "Lancement de l'épisode de Mimoun !"
       },
       {
@@ -576,7 +576,7 @@ useEffect(() => {
         type: 'magazine',
         title: 'Mag-Inclusion AMTDA : Spécial Artisanat',
         description: "Un journal illustré avec une typographie de grand confort et des fiches en couleur sur les potiers de Safi et tanneurs de Fès.",
-        image: '/image/acc.jpg',
+        image: 'image/teen.jpg',
         actionPayload: "Ouverture du Magazine en cours de chargement... / فتح المجلة الملونة للأطفال"
       },
       {
@@ -584,7 +584,7 @@ useEffect(() => {
         type: 'tale',
         title: "L'arbre magique de Chefchaouen 🌳",
         description: "Une histoire de sagesse et de partage au pied des montagnes bleues de Chefchaouen pour éveiller l'imagination.",
-        image: '/image/0012.jpg',
+        image: '/image/image_49cd57f1.jpg',
         actionPayload: "Il était une fois, niché au cœur des ruelles bleues de Chefchaouen, un arbre de sagesse dont chaque feuille murmurait de jolis contes d'entraide et de bonheur."
       }
     ];
