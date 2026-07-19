@@ -11,13 +11,6 @@ export default function GallerySection({ items }: GallerySectionProps) {
   const [filter, setFilter] = useState<'all' | 'classrooms' | 'screenings' | 'events' | 'drawings'>('all');
   const [lightboxImg, setLightboxImg] = useState<string | null>(null);
 
-  const getCleanUrl = (url: string) => {
-    if (url.includes('0012') || url.includes('0013') || url.includes('0014')) {
-      return './image/fils_child_178426502318.jpg';
-    }
-    return `./${url}`;
-  };
-
   const filteredItems = filter === 'all' ? items : items.filter(item => item.category === filter);
 
   const openLightbox = (url: string) => {
@@ -69,7 +62,7 @@ export default function GallerySection({ items }: GallerySectionProps) {
               {/* Image Frame */}
               <div className="aspect-video w-full overflow-hidden bg-slate-100 relative">
                 <img
-                  src={getCleanUrl(item.url)}
+                  src={item.url}
                   alt={item.title}
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -107,7 +100,7 @@ export default function GallerySection({ items }: GallerySectionProps) {
         >
           <div className="max-w-4xl max-h-full relative overflow-hidden rounded-2xl shadow-2xl bg-black">
             <img
-              src={getCleanUrl(lightboxImg)}
+              src={lightboxImg}
               alt="Souvenir Agrandissement"
               referrerPolicy="no-referrer"
               className="max-w-full max-h-[85vh] object-contain mx-auto"
