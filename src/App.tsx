@@ -249,31 +249,31 @@ const [galleryItems, setGalleryItems] = useState<GalleryItem[]>(() => {
   return [
     {
       id: '1',
-      url: '/image/ortof.jpg',
+      url: 'image/ortof.jpg',
       title: 'Journée Dépistage - Casablanca',
       description: 'Le dépistage précoce est souvent gratuit dans notre réseau des centres.'
     },
     {
       id: '2',
-      url: '/image/Fpro.jpg',
+      url: 'image/Fpro.jpg',
       title: 'Formations au Professionnels',
       description: 'L\'accompagnement et la formation professionnelle permettent le développement stratégique des compétences en entreprise.'
     },
     {
       id: '3', // Corrigé : id unique
-      url: '/image/family.jpg',
+      url: 'image/family.jpg',
       title: 'AMTDA',
       description: 'La famille AMTDA'
     },
     {
       id: '4', // Corrigé : id unique
-      url: '/image/natio.jpg',
+      url: 'image/natio.jpg',
       title: 'Journée d\'accompagnement',
       description: 'la mise en place d\'un PAP (Plan d\'Accompagnement Personnalisé) ou d\'un PPS.'
     },
     {
       id: '5', // Corrigé : id unique
-      url: '/image/scool.jpg',
+      url: 'image/scool.jpg',
       title: 'Atelier d\'orthophonie - Casablanca',
       description: 'Atelier d\'orthophonie - Casablanca'
     }

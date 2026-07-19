@@ -1,0 +1,17 @@
+{
+  "cleanUrls": true,
+  "routes": [
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "/image/(.*)",
+      "dest": "/image/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}

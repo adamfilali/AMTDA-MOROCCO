@@ -454,7 +454,7 @@ export default function AdminPanel({
       type: newCultureItem.type,
       title: newCultureItem.title,
       description: newCultureItem.description || "Contenu éducatif inclusif.",
-      image: newCultureItem.image || '/image/chameau.jpg',
+      image: newCultureItem.image || 'image/chameau.jpg',
       actionPayload: newCultureItem.actionPayload || "Aucun contenu d'action défini.",
       videoUrl: newCultureItem.videoUrl || ''
     };
@@ -528,7 +528,7 @@ export default function AdminPanel({
       title: { fr: titleFr, en: titleFr, zh: titleFr },
       excerpt: { fr: excerptFr, en: excerptFr, zh: excerptFr },
       content: { fr: contentFr, en: contentFr, zh: contentFr },
-      image: newArticle.image || '/image/partener.jpg',
+      image: newArticle.image || 'image/partener.jpg',
       date: new Date().toLocaleDateString('fr-FR'),
       category: 'Activités'
     };
@@ -1483,7 +1483,7 @@ export default function AdminPanel({
                         type="text" 
                         value={homePageImage} 
                         onChange={(e) => setHomePageImage?.(e.target.value)} 
-                        placeholder="/image/accu.jpg"
+                        placeholder="image/accu.jpg"
                         className="flex-1 bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-xs font-mono text-white focus:outline-hidden"
                       />
                       <label className="px-3 py-2 bg-[#92C83E]/10 hover:bg-[#92C83E]/20 text-[#92C83E] rounded-xl text-xs font-bold cursor-pointer flex items-center justify-center gap-1.5 transition-colors">
@@ -1524,12 +1524,12 @@ export default function AdminPanel({
                     </div>
                   </div>
 
-                  {homePageImage !== '/image/accu.jpg' && (
+                  {homePageImage !== 'image/accu.jpg' && (
                     <button
                       type="button"
                       onClick={() => {
                         playChime('click');
-                        setHomePageImage?.('/image/accu.jpg');
+                        setHomePageImage?.('image/accu.jpg');
                       }}
                       className="w-full py-2 bg-slate-900 hover:bg-slate-850 text-slate-400 hover:text-slate-200 text-xs font-bold rounded-xl transition-all border border-slate-800"
                     >
@@ -1778,7 +1778,7 @@ export default function AdminPanel({
                           type="text"
                           value={editingCultureItem.image}
                           onChange={(e) => setEditingCultureItem({ ...editingCultureItem, image: e.target.value })}
-                          placeholder="/image/chameau.jpg"
+                          placeholder="image/chameau.jpg"
                           className="flex-1 bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-xs font-mono focus:outline-hidden text-white"
                         />
                         <label className="px-3 py-2 bg-slate-800 hover:bg-slate-700 text-white rounded-xl text-xs font-bold cursor-pointer flex items-center justify-center gap-1.5 shrink-0">
@@ -1910,7 +1910,7 @@ export default function AdminPanel({
                           type="text"
                           value={newCultureItem.image}
                           onChange={(e) => setNewCultureItem({ ...newCultureItem, image: e.target.value })}
-                          placeholder="/image/singee.jpg"
+                          placeholder="image/singee.jpg"
                           className="flex-1 bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-xs font-mono focus:outline-hidden text-white"
                         />
                         <label className="px-3 py-2 bg-slate-800 hover:bg-slate-700 text-white rounded-xl text-xs font-bold cursor-pointer flex items-center justify-center gap-1.5 shrink-0">
@@ -2090,7 +2090,7 @@ export default function AdminPanel({
                   <div key={item.id} className="p-3 bg-slate-900 rounded-xl border border-slate-800 flex flex-col justify-between space-y-2">
                     <div className="space-y-2">
                       <div className="aspect-[16/10] rounded-lg overflow-hidden relative bg-slate-950">
-                        <img src={item.image || '/image/teen.jpg'} alt="" className="w-full h-full object-cover" />
+                        <img src={item.image || 'image/teen.jpg'} alt="" className="w-full h-full object-cover" />
                         <span className={`absolute top-1 left-1 text-[8px] text-white font-extrabold px-1.5 py-0.5 rounded-full uppercase ${
                           item.type === 'video' ? 'bg-rose-600' : item.type === 'magazine' ? 'bg-emerald-600' : 'bg-amber-600'
                         }`}>
