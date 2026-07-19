@@ -203,11 +203,11 @@ export default function App() {
 
   // LOGO DYNAMIC STATE
   const [logoUrl, setLogoUrl] = useState<string>(() => {
-    return localStorage.getItem('/imagePi/l_1000f_t.png') || '';
+    return localStorage.getItem('./image/logo.svg') || '';
   });
 
   useEffect(() => {
-    localStorage.setItem('/imagePi/l_1000f_t.png', logoUrl);
+    localStorage.setItem('./image/logo.svg', logoUrl);
   }, [logoUrl]);
 
   // STATISTICS ENGINE
@@ -291,18 +291,18 @@ useEffect(() => {
     return [
       {
         id: 't1',
-        name: 'Mme. Amina Nejjar',
-        role: 'Maman de Rayane (10 ans)',
-        text: 'Grâce à l\'accompagnement de l\'AMTDA, mon fils qui souffrait d\'une dyslexie sévère a réappris à aimer l\'école et à déchiffrer ses premières lectures courantes.',
-        avatar: '/image/l_1000a_t.png',
+        name: 'Mr. Khïr-Eddine Nejjari',
+        role: 'SPETIAL & FURNITURE DESIGNER',
+        text: 'La formation dispensée par les experts de l\'association a complètement transformé notre approche des enfants ayant des troubles d\'apprentissage en classe.',
+        avatar: './image/avatar-1784369122265-nej.jpg',
         isApproved: true
       },
       {
         id: 't2',
-        name: 'M. Youssef Alami',
-        role: 'Directeur d\'école primaire publique',
-        text: 'La formation dispensée par les experts de l\'association a complètement transformé notre approche des enfants ayant des troubles d\'apprentissage en classe.',
-        avatar: '/image/l_1000a_t.png',
+        name: 'Mme Ghita Alami',
+        role: 'MAMAN DE Farass (9ans)',
+        text: 'Grâce à l\'accompagnement de l\'AMTDA, ma fille qui souffrait d\'une dyslexie sévère a réappris à aimer l\'école et à déchiffrer ses premières lectures courantes.',
+        avatar: './image/ALAMI.jpg',
         isApproved: true
       }
     ];
