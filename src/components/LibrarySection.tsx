@@ -46,6 +46,7 @@ export default function LibrarySection({
       author: 'AMTDA Éditions',
       description: 'Une histoire merveilleuse illustrant comment Hiba surmonte ses difficultés de calcul grâce à sa persévérance et à des astuces de comptage.',
       coverColor: '#92C83E',
+      coverImage: './fil-couv.jpg',
       pages: [
         "Il était une fois, dans une école de Casablanca, une petite fille intelligente nommée Hiba. Hiba adorait dessiner des papillons colorés.",
         "Mais en classe de calcul, les chiffres semblaient danser. Le 3 ressemblait à une vague et le 8 à un bonhomme de neige. Son institutrice remarqua cela.",
@@ -389,10 +390,13 @@ export default function LibrarySection({
               <div className="lg:col-span-4 space-y-4">
                  <div 
                   className="aspect-[3/4] w-full rounded-2xl shadow-sm p-5 flex flex-col justify-between text-white relative overflow-hidden bg-cover bg-center"
-                  style={{ 
-                    backgroundColor: selectedBook.coverColor || '#0B722C',
-                    backgroundImage: (selectedBook.coverImage || selectedBook.coverUrl) ? `url(${selectedBook.coverImage || selectedBook.coverUrl})` : undefined
-                  }}
+                  style={{
+                backgroundColor: selectedBook.coverColor || '#0B722C',
+                backgroundImage: `url('${selectedBook.coverImage || './fil-couv.jpg'}')`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center'
+              }}
+
                 >
                   <div className="space-y-1.5 relative z-10">
                     <span className="bg-white/20 backdrop-blur-xs text-[9px] uppercase font-semibold px-2 py-0.5 rounded-full tracking-wider">
@@ -434,7 +438,7 @@ export default function LibrarySection({
               </div>
 
               {/* Book Content Screen */}
-             <div className="lg:col-span-8 rounded-3xl p-5 border border-slate-200/80 min-h-[280px] flex flex-col justify-between shadow-2xs bg-cover bg-center bg-no-repeat relative" style={{ backgroundImage: "url('./fil-couv.jpg')" }}>
+             <div className="lg:col-span-8 bg-slate-50 rounded-3xl p-5 border border-slate-200/80 min-h-[280px] flex flex-col justify-between shadow-2xs">
 
                 {/* Book header bar */}
                 <div className="flex justify-between items-center pb-3 border-b border-slate-200">
