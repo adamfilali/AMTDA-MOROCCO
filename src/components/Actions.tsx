@@ -37,7 +37,7 @@ export default function Actions({ setPage }: ActionsProps) {
           </div>
           <div className="lg:col-span-5">
             <img
-              src="/assets/soutient.jpg"
+              src="./assets/soutient.jpg"
               alt="Groupe d'enfants du Maroc souriants à l'école"
               referrerPolicy="no-referrer"
               className="w-full h-56 object-cover rounded-2xl shadow-md border border-slate-200"

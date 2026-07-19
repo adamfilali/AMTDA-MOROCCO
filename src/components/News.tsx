@@ -50,7 +50,7 @@ export default function News({ setPage }: NewsProps) {
     <div className="animate-fade-in bg-white relative">
       {/* Header Banner with Arabic Quote Overlay as in mockup */}
       <section className="relative bg-slate-900 py-20 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: "url('/assets/confe.jpg')" }}></div>
+        <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: "url('./assets/confe.jpg')" }}></div>
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/60 to-transparent"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

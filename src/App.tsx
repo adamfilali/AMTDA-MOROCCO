@@ -261,7 +261,7 @@ const [galleryItems, setGalleryItems] = useState<GalleryItem[]>(() => {
     },
     {
       id: '3', // Corrigé : id unique
-      url: '/image/family.jpg',
+      url: './image/family.jpg',
       title: 'AMTDA',
       description: 'La famille AMTDA'
     },
@@ -568,7 +568,7 @@ useEffect(() => {
         type: 'video',
         title: 'Les aventures de Mimoun le singe 🐒',
         description: "Suivez Mimoun dans le Moyen-Atlas marocain pour apprendre les formes géométriques et l'importance de la solidarité.",
-        image: '/image/singee.jpg',
+        image: './image/singee.jpg',
         actionPayload: "Lancement de l'épisode de Mimoun !"
       },
       {
@@ -576,7 +576,7 @@ useEffect(() => {
         type: 'magazine',
         title: 'Mag-Inclusion AMTDA : Spécial Artisanat',
         description: "Un journal illustré avec une typographie de grand confort et des fiches en couleur sur les potiers de Safi et tanneurs de Fès.",
-        image: 'image/teen.jpg',
+        image: './image/teen.jpg',
         actionPayload: "Ouverture du Magazine en cours de chargement... / فتح المجلة الملونة للأطفال"
       },
       {
@@ -584,7 +584,7 @@ useEffect(() => {
         type: 'tale',
         title: "L'arbre magique de Chefchaouen 🌳",
         description: "Une histoire de sagesse et de partage au pied des montagnes bleues de Chefchaouen pour éveiller l'imagination.",
-        image: '/image/image_49cd57f1.jpg',
+        image: './image/image_49cd57f1.jpg',
         actionPayload: "Il était une fois, niché au cœur des ruelles bleues de Chefchaouen, un arbre de sagesse dont chaque feuille murmurait de jolis contes d'entraide et de bonheur."
       }
     ];

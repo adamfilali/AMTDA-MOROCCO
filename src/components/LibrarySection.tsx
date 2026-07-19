@@ -717,7 +717,7 @@ export default function LibrarySection({
               </p>
             </div>
             <img 
-              src="/image/Lam.jpg" 
+              src="./image/LAM.jpg" 
               alt="Maroc" 
               referrerPolicy="no-referrer"
               className="w-24 h-16 object-cover rounded-xl shadow-xs shrink-0 border border-white" 
@@ -732,7 +732,7 @@ export default function LibrarySection({
                   <div className="space-y-3">
                     <div className="aspect-[16/10] bg-slate-100 rounded-xl overflow-hidden relative border border-slate-100">
                       <img 
-                        src={item.image || '/image/Lim.jpg'} 
+                        src={item.image || './image/LAM.jpg'} 
                         alt={item.title} 
                         referrerPolicy="no-referrer"
                         className="w-full h-full object-cover"

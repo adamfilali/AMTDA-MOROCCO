@@ -62,7 +62,7 @@ export default function GallerySection({ items }: GallerySectionProps) {
               {/* Image Frame */}
               <div className="aspect-video w-full overflow-hidden bg-slate-100 relative">
                 <img
-                  src={item.url}
+                  src={`./${item.url}`}
                   alt={item.title}
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -100,7 +100,7 @@ export default function GallerySection({ items }: GallerySectionProps) {
         >
           <div className="max-w-4xl max-h-full relative overflow-hidden rounded-2xl shadow-2xl bg-black">
             <img
-              src={lightboxImg}
+              src={`./${lightboxImg}`}
               alt="Souvenir Agrandissement"
               referrerPolicy="no-referrer"
               className="max-w-full max-h-[85vh] object-contain mx-auto"

@@ -61,7 +61,7 @@ export default function About() {
           <div className="lg:col-span-6 space-y-6">
             <div className="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200 bg-slate-100">
               <img
-                src="/assets/qui.jpg"
+                src="./assets/qui.jpg"
                 alt="Notre école, un espace d'inclusion et de réussite"
                 referrerPolicy="no-referrer"
                 className="w-full h-72 object-cover"
